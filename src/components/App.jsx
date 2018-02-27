@@ -111,7 +111,7 @@ let z = this.refs.valor_z.value*300;
 let currentComponent = this;
 event.preventDefault();
    request
-   .post('http://localhost:3000')
+   .post('https://mighty-anchorage-23179.herokuapp.com/')
    .set('Content-Type', 'application/json')
    .send({x1:x})
    .send({y1:y})
