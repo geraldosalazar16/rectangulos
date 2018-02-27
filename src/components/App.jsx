@@ -31,7 +31,7 @@ constructor(props){
       return <h1>No existen puntos validos</h1>
     }
     else{
-      return <h1>Punto sin calcular</h1>
+      return <h1>Puntos sin calcular</h1>
     }
   }
 }
