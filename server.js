@@ -22,8 +22,8 @@ app.use(body_parser.urlencoded({extended:true}));
 app.use(express.static(__dirname + '/public'));
 app.use( body_parser.json({ type: 'application/json' }) );
 
-var port = process.env.PORT || 8080;
-app.listen(port_number, function(){
+var port = process.env.PORT || 3000;
+app.listen(port, function(){
   console.log('servidor escuchando en puerto 3000');
 });
 //var calculo = require('./routes/calculo');
