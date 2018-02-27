@@ -24,7 +24,7 @@ app.use( body_parser.json({ type: 'application/json' }) );
 
 var port = process.env.PORT || 4000;
 app.listen(port, function(){
-  console.log('servidor escuchando en puerto 4000');
+  console.log('servidor escuchando en puerto '+port);
 });
 //var calculo = require('./routes/calculo');
 //app.use('/calculo',calculo);

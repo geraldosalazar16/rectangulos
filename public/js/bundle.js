@@ -36606,7 +36606,7 @@ var Header = function (_Component2) {
         return _react2.default.createElement(
           'h1',
           null,
-          'Punto sin calcular'
+          'sin calcular'
         );
       }
     }
@@ -36708,7 +36708,7 @@ var Tabla = function (_Component4) {
 
       var currentComponent = this;
       event.preventDefault();
-      _superagent2.default.post('http://localhost:3000').set('Content-Type', 'application/json').send({ x1: x }).send({ y1: y }).send({ z1: z }).then(function (res) {
+      _superagent2.default.post('https://mighty-anchorage-23179.herokuapp.com/').set('Content-Type', 'application/json').send({ x1: x }).send({ y1: y }).send({ z1: z }).then(function (res) {
         var punto_inicial = res.body[0];
         var punto = res.body[1];
         var estado = [{
