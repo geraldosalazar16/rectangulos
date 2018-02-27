@@ -3,6 +3,7 @@ const body_parser = require('body-parser');
 const app = express();
 
 //Conexion a la base de datos
+/*
 var mysql = require('mysql');
 
 var con = mysql.createConnection({
@@ -16,7 +17,7 @@ con.connect(function(err) {
   if (err) throw err;
   console.log("Connected!");
 });
-
+*/
 app.use(body_parser.urlencoded({extended:true}));
 app.use(express.static(__dirname + '/public'));
 app.use( body_parser.json({ type: 'application/json' }) );
@@ -117,11 +118,14 @@ var x = req.body.x1||0;
       var posicion = Math.floor(aleatoria);
       console.log("posicion: "+posicion);
         //Insertar en la base de datos
+        /*
         var sql = "insert into puntos (X,Y) values("+puntos[posicion]["x1"]+","+puntos[posicion]["y1"]+")";
+        
         con.query(sql, function (err, result) {
           if (err) throw err;
           console.log("Result: " + result);
         });
+        */
         res.json(
           [
             {
